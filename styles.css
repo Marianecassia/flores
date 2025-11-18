@@ -1,0 +1,120 @@
+/* Estilos Gerais e Reset Básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo suave */
+    color: #333;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #b19cd9; /* Cor de lavanda para o cabeçalho */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #9980cc; /* Efeito hover mais escuro */
+}
+
+/* Estilos das Seções (Trimestres) */
+.trimestre {
+    padding: 60px 5%;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trimestre h2 {
+    color: #8a2be2; /* Azul violeta */
+    border-bottom: 2px solid #8a2be2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.exemplo-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos da Galeria (Seção 4) */
+.galeria {
+    padding: 60px 5%;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #e6e6fa; /* Fundo mais claro para a galeria */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.galeria h2 {
+    color: #ff69b4; /* Pink forte */
+    border-bottom: 2px solid #ff69b4;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.galeria-grid {
+    display: grid;
+    /* Cria um layout de colunas responsivo: mínimo de 250px por coluna */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px; /* Espaçamento entre as imagens */
+}
+
+.galeria-grid img {
+    width: 100%; /* Faz a imagem preencher a célula do grid */
+    height: 200px; /* Altura fixa para manter a uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+    z-index: 10;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
